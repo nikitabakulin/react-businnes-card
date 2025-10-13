@@ -175,18 +175,18 @@ header a:hover {
 }
 
 .main-image-block {
+  margin-top: 5%;
   width: 35%;
   margin-left: 10%;
-  margin-top: -3%;
 }
 
 
 /* ----- SKILLS BLOCK ----- */
 .skills-block {
+  margin-top: 5%;
   margin-left: -5vw;
   margin-right: -5vw;
   padding: 0 5vw;
-  background: #fbfaff;
 }
 
 .skills-block .tag {
@@ -218,8 +218,42 @@ header a:hover {
 
 /* ----- GITHUB BLOCK ----- */
 .github-block {
+  margin-top: 5%;
   margin-left: -5vw;
   margin-right: -5vw;
   padding: 0 5vw;
-  background: #fbfaff;
+}
+
+/* -----ABOUT MYSELF BLOCK ----- */
+.about-myself-block {
+  margin-top: 5%;
+  margin-left: -5vw;
+  margin-right: -5vw;
+  padding: 0 5vw;
+}
+
+.about-myself-block .tag {
+  display: flex;
+  font-size: 24px;
+  font-weight: 500;
+  width: 75%;
+  margin: 0 6px 5px 0;
+  padding: 8px 22px 8px 8px;
+}
+
+.about-myself-block .tag .tag-icon {
+  margin: -10px;
+  margin-right: 10px;
+  padding: 0;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-color: #4824ff; /* цвет иконки */
+  -webkit-mask-image: url('/public/icons/check.svg');
+  mask-image: url('/public/icons/check.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  scale: 1;
 }

@@ -14,7 +14,7 @@ function Main() {
     <div>
       <header>
         <div className="menu">
-          <a>Обо мне</a>
+          <a>О себе</a>
           <a>Услуги</a>
           <a>Портфолио</a>
           <a>Отзывы</a>
@@ -41,7 +41,7 @@ function Main() {
         <div className='first-block'>
           <h1> Программист-разработчик <span className='title'> nikita_bakulin</span> </h1>
           
-          <h2 style={{ marginTop: "7%" }}>  
+          <h2 style={{ marginTop: "5%" }}>  
             <span style={{ color: "#4824ff" }}> Backend </span>
             и 
             <span style={{ color: "#4824ff" }}> Full-stack </span>
@@ -55,7 +55,7 @@ function Main() {
             <span style={{ color: "#4824ff" }}> учиться </span> новому
           </h2>
 
-          <h2 style={{ marginBottom: "7%"}}> 
+          <h2> 
             Стремлюсь к 
             <span style={{ color: "#4824ff" }}> реальным проектам </span>
             и 
@@ -111,6 +111,16 @@ function Main() {
           а также улучшения к существующим репозиториям будут регулярно появляться в моём  
           <a style={{ color:"#4824ff", textDecoration:   "none" }} href='https://github.com/nikitabakulin'> GitHub-профиле</a>.
         </p>
+      </div>
+
+      <div className='about-myself-block'>
+        <h1 style={{ fontSize: "52px" }}>О себе</h1>
+        <p style={{ fontSize: "27px" }} className='tag'> <p className='tag-icon'/> Никита Бакулин - Backend и Full-Stack разработчик из города Кирова </p>
+        <p style={{ fontSize: "27px" }} className='tag'> <p className='tag-icon'/> Образование: Колледж, Информационные системы и программирование, специалист </p>
+        <p style={{ fontSize: "27px" }} className='tag'> <p className='tag-icon'/> Коммуникабельный, ответственный, умею работать в команде </p>
+        <p style={{ fontSize: "27px" }} className='tag'> <p className='tag-icon'/> Изучаю английский для профессионального роста и работы с международной документацией </p>
+        <p style={{ fontSize: "27px" }} className='tag'> <p className='tag-icon'/> Быстро осваиваю новые технологии и стеки </p>
+        <p style={{ fontSize: "27px" }} className='tag'> <p className='tag-icon'/> Есть водительское удостоверение и автомобиль </p>
       </div>
     </div>
   );
