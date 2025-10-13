@@ -39,9 +39,9 @@ const ModalWindow = ({ show, onClose, children }) => {
                     {children}
                     <div style={{ display: "flex" }}>
                         <a href="https://t.me/sid10Juve" target="_blank" className="social-button">
-                        <a className="social telegram"/> Telegram </a>
-                        <a href="https://t.me/sid10Juve" target="_blank" className="social-button">
-                        <a className="social instagram"/> Instagram </a>
+                        <a className="social telegram"/> Телеграм </a>
+                        <a href="https://vk.com/nikita_bakulin" target="_blank" className="social-button">
+                        <a className="social instagram"/> ВКонтакте </a>
                     </div>
                 </div>
         </div>

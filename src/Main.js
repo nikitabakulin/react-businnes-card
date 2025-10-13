@@ -29,7 +29,7 @@ function Main() {
         </ModalWindow>
 
         <a href="https://t.me/sid10Juve" target="_blank" className="icon telegram"/>
-        <a href="https://t.me/sid10Juve" target="_blank" className="icon instagram"/>
+        <a href="https://vk.com/nikita_bakulin" target="_blank" className="icon instagram"/>
 
         <div className="switch"> 
           <div className="theme light"></div>
@@ -70,6 +70,34 @@ function Main() {
         <div className='main-image-block'>
           <img src='./logo512.png' draggable="false"/>
         </div>
+      </div>
+
+      <div className='skills-block' draggable="false">
+        <h1 style={{ fontSize: "52px" }}>Навыки</h1>
+        <p style={{ fontSize: "27px" }}> Пишу  
+          <span style={{ color:"#4824ff" }}> чистый </span>
+          и
+          <span style={{ color:"#4824ff" }}> читаемый </span>
+          код с применением технологий
+        </p>
+
+        <div style={{display: "flex", marginTop: "16px"}}> 
+          <p className='tag'> <p className='tag-icon'/> NEXT.Js </p>
+          <p className='tag'> <p className='tag-icon'/> React </p>
+          <p className='tag'> <p className='tag-icon'/> TypeScript, JavaScript </p>
+          <p className='tag'> <p className='tag-icon'/> PostgreSQL, Prisma </p>
+          <p className='tag'> <p className='tag-icon'/> Andoid (Java, Kotlin) </p>    
+        </div>
+        <div style={{display: "flex", marginTop: "16px"}}> 
+          <p className='tag'> <p className='tag-icon'/> WPF, ASP.Net, C# </p> 
+          <p className='tag'> <p className='tag-icon'/> EntityFramework, MS SQL Server </p>
+          <p className='tag'> <p className='tag-icon'/> Паттерны MVC, MVVM </p>
+        </div>
+
+        <p style={{fontSize: "27px"}}> Готов работать в команде, быстро адапируюсь к процессам и куммуникации. <br/>
+          Детальную информацию готов обсудить при
+          <span style={{ color:"#4824ff", cursor: "pointer" }} onClick={handleOpenModal}> личной переписке</span>.        
+        </p>
       </div>
     </div>
   );

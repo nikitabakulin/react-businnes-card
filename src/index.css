@@ -1,6 +1,6 @@
 body {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 5vw;
+  margin-right: 5vw;
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Nunito";
@@ -70,16 +70,16 @@ header a:hover {
 .btn:before {
   content: '';
   position: absolute;
-  height: 300px;
+  height: 270px;
   width: 30px;
   background: #ffffffbd;
   filter: blur(2px);
   transition: 1.5s;
-  transform: rotate(-20deg) translateX(-50px) translateY(-200px);
+  transform: rotate(-10deg) translateX(-50px) translateY(-200px);
 }
 
 .btn:hover:before {
-  transform: rotate(-20deg) translateX(200px);
+  transform: rotate(-10deg) translateX(200px);
 }
 
 /*доделать иконки, сейчас при наведении появляется зеленый цвет, так же пофиксить размеры*/
@@ -178,4 +178,40 @@ header a:hover {
   width: 35%;
   margin-left: 10%;
   margin-top: -3%;
+}
+
+
+/* ----- SKILLS BLOCK ----- */
+.skills-block {
+  margin-left: -5vw;
+  margin-right: -5vw;
+  padding: 0 5vw;
+  background: #fbfaff;
+}
+
+.skills-block .tag {
+  display: flex;
+  font-size: 24px;
+  font-weight: 500;
+  background: #eeebff;
+  color: #4824ff;
+  margin: 0 12px 0 0;
+  padding: 8px 22px 8px 8px;
+  border-radius: 24px;
+}
+
+.skills-block .tag .tag-icon {
+  margin: -10px;
+  padding: 0;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-color: #4824ff; /* цвет иконки */
+  -webkit-mask-image: url('/public/icons/check.svg');
+  mask-image: url('/public/icons/check.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  scale: 0.77;
 }
