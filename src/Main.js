@@ -80,23 +80,36 @@ function Main() {
           <span style={{ color:"#4824ff" }}> читаемый </span>
           код с применением технологий
         </p>
-
         <div style={{display: "flex", marginTop: "16px"}}> 
           <p className='tag'> <p className='tag-icon'/> NEXT.Js </p>
           <p className='tag'> <p className='tag-icon'/> React </p>
           <p className='tag'> <p className='tag-icon'/> TypeScript, JavaScript </p>
           <p className='tag'> <p className='tag-icon'/> PostgreSQL, Prisma </p>
-          <p className='tag'> <p className='tag-icon'/> Andoid (Java, Kotlin) </p>    
+          <p className='tag'> <p className='tag-icon'/> Andoid (Java, Kotlin) </p>  
+          <p className='tag'> <p className='tag-icon'/> Git </p>  
         </div>
         <div style={{display: "flex", marginTop: "16px"}}> 
-          <p className='tag'> <p className='tag-icon'/> WPF, ASP.Net, C# </p> 
+          <p className='tag'> <p className='tag-icon'/> WPF, ASP.Net, C# </p>
           <p className='tag'> <p className='tag-icon'/> EntityFramework, MS SQL Server </p>
+          <p className='tag'> <p className='tag-icon'/> HTML, CSS </p>
           <p className='tag'> <p className='tag-icon'/> Паттерны MVC, MVVM </p>
         </div>
-
         <p style={{fontSize: "27px"}}> Готов работать в команде, быстро адапируюсь к процессам и куммуникации. <br/>
           Детальную информацию готов обсудить при
           <span style={{ color:"#4824ff", cursor: "pointer" }} onClick={handleOpenModal}> личной переписке</span>.        
+        </p>
+      </div>
+
+      <div className='github-block'>
+        <h1 style={{ fontSize: "52px" }}>GitHub проекты</h1>
+        <p style={{ fontSize: "27px" }}> Ознакомтесь с моими репозиториями на   
+          <a style={{ color:"#4824ff", textDecoration:   "none" }} href='https://github.com/nikitabakulin'> GitHub </a>. <br/>
+          <a style={{ color:"#4824ff", textDecoration:   "none" }} href='https://github.com/nikitabakulin'> Здесь </a>
+          можно увидеть примеры API, веб-приложений, над которыми я работал.
+        </p>
+        <p style={{ fontSize: "27px" }}> Активно развиваюсь как разработчик, и все свежие наработки, эксперементальные и pet-проекты, <br/>
+          а также улучшения к существующим репозиториям будут регулярно появляться в моём  
+          <a style={{ color:"#4824ff", textDecoration:   "none" }} href='https://github.com/nikitabakulin'> GitHub-профиле</a>.
         </p>
       </div>
     </div>

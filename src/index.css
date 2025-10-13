@@ -215,3 +215,11 @@ header a:hover {
   mask-position: center;
   scale: 0.77;
 }
+
+/* ----- GITHUB BLOCK ----- */
+.github-block {
+  margin-left: -5vw;
+  margin-right: -5vw;
+  padding: 0 5vw;
+  background: #fbfaff;
+}
