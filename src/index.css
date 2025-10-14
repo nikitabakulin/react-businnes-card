@@ -1,3 +1,43 @@
+html[data-theme='light'] {
+  --main-background: white;
+  --header-background: #ffffffe1;
+
+  --main-text-color: black;
+
+  --switch-background: #eeebff;
+  --theme-background: white;
+
+  --title-border-color: #4824ff30;
+  
+  --main-elements-color: #eeebff;
+  --bg-white-to-main: white;
+  --elements-color: white;
+
+  --tag-text-color: #4824ff;
+  --selected-tag-background: #04001a;
+}
+
+html[data-theme='dark'] {
+  --main-background: #04001a;
+  --header-background: #04001ae1;
+
+  --main-text-color: white;
+
+  --switch-background: #120940;
+  --theme-background: #4824ff;
+
+  --title-border-color: #eeebff25;
+  
+  --main-elements-color: #4824ff;
+  --bg-white-to-main: #4824ff;
+  --elements-color: #080033;
+
+  --tag-text-color: white;
+  --selected-tag-background: white;
+}
+
+
+
 body {
   margin-left: 5vw;
   margin-right: 5vw;
@@ -6,6 +46,8 @@ body {
   font-family: "Nunito";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--main-background);
+  color: var(--main-text-color)
 }
 
 @font-face {
@@ -24,14 +66,26 @@ code {
 /* ----- HEADER ----- */
 
 header {
+  margin-left: -5vw;
+  margin-right: -5vw;
+  position: fixed;
+  width: 90vw;
+  padding: 0 5vw 0 5vw;
+  background: var(--header-background);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+}
+
+.navigation {
   display: flex;
+  justify-content: space-between;
   height: 100px;
-  place-items: center;
+  align-items: center;
 }
 
 .menu {
   height: 100px;
-  width: 100%;
+  width: 50vw;
   align-content: center;
 }
 
@@ -48,7 +102,13 @@ header a:hover {
   filter: drop-shadow(0px 0px 50px #4824ff);
 }
 
+.header-buttons {
+  display: flex;
+  gap: 20px;
+}
+
 .btn {
+  position: relative;
   height: 55px;
   width: 222px;
   border-radius: 55px;
@@ -75,11 +135,11 @@ header a:hover {
   background: #ffffffbd;
   filter: blur(2px);
   transition: 1.5s;
-  transform: rotate(-10deg) translateX(-50px) translateY(-200px);
+  transform: rotate(-25deg) translateX(-50px) translateY(-200px);
 }
 
 .btn:hover:before {
-  transform: rotate(-10deg) translateX(200px);
+  transform: rotate(-25deg) translateX(200px);
 }
 
 /*доделать иконки, сейчас при наведении появляется зеленый цвет, так же пофиксить размеры*/
@@ -91,6 +151,11 @@ header a:hover {
   margin-right: 2%;
   cursor: pointer;
   filter: invert();
+}
+
+.icon.telegram.light,
+.icon.instagram.light {
+  background-color: white;
 }
 
 .icon.telegram {
@@ -105,15 +170,18 @@ header a:hover {
 }
 
 .icon:hover {
-  background: #4824ff;
-  filter: drop-shadow(0px 0px 35px #4824ff40);
+  background-color: white;
+  filter: drop-shadow(0px 0px 5px #4824ff40);
 }
 
 .switch {
-  width: 135px;
+  width: 100px;
   height: 55px;
   border-radius: 55px;
-  background-color: #eeebff;
+  background-color: var(--switch-background);
+  border: 1px solid var(--main-elements-color);
+  cursor: pointer;
+  position: relative;
   overflow: hidden;
 }
 
@@ -122,12 +190,19 @@ header a:hover {
   width: 51px;
   height: 51px;
   border-radius: 55px;
-  background: white;
-  transition: 0.5s ease-in-out;
+  background: var(--bg-white-to-main);
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .theme.light {
   content: url(/public/icons/sun.svg);
+}
+
+.theme.dark {
+  content: url(/public/icons/moon.svg);
 }
 
 .switch:hover > .theme.light {
@@ -137,7 +212,7 @@ header a:hover {
 
 /* ----- WELCOME BLOCK ----- */
 .welcome-block {
-  height: 650px;
+  height: 800px;
   display: flex;
   place-items: center;
 }
@@ -157,7 +232,7 @@ header a:hover {
 }
 
 .title {
-  background: linear-gradient(to right, #4824ff, #4824ff, #85ebff, #eeebff, #85adff, #4824ff, #4824ff);
+  background: linear-gradient(to right, #4824ff, #4824ff, #85ebff, var(--main-elements-color), #85adff, #4824ff, #4824ff);
   background-clip: text;
   color: transparent;
   background-size: 200%;
@@ -193,8 +268,8 @@ header a:hover {
   display: flex;
   font-size: 24px;
   font-weight: 500;
-  background: #eeebff;
-  color: #4824ff;
+  background: var(--main-elements-color);
+  color: var(--tag-text-color);
   margin: 0 12px 0 0;
   padding: 8px 22px 8px 8px;
   border-radius: 24px;
@@ -206,7 +281,7 @@ header a:hover {
   position: relative;
   height: 50px;
   width: 50px;
-  background-color: #4824ff; /* цвет иконки */
+  background-color: var(--tag-text-color); /* цвет иконки */
   -webkit-mask-image: url('/public/icons/check.svg');
   mask-image: url('/public/icons/check.svg');
   -webkit-mask-repeat: no-repeat;
@@ -256,4 +331,53 @@ header a:hover {
   -webkit-mask-position: center;
   mask-position: center;
   scale: 1;
+}
+
+/* ----- FOOTER BLOCK ----- */
+.footer {
+  height: 80px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #cec4fe50;
+  margin-left: -5vw;
+  margin-right: -5vw;
+  align-content: center;
+}
+
+
+/* ----- BUTTON TO UP ----- */
+.btn-up {
+  position: fixed;
+  right: 5vw;
+  bottom: 6vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s linear;
+  animation: appearance 2s forwards;
+  border: none;
+  opacity: 0;
+  transform: translateY(0);
+  background: #4824ff;
+}
+
+@keyframes appearance {
+  0% { opacity: 0; transform: translateY(40px); border-radius: 50%; }
+  100% { opacity: 1; transform: translateY(0px); border-radius: 50%; }
+}
+
+.btn-up::before {
+  content: "";
+  height: 70px;
+  width: 70px;
+  size: 2%;
+  background-color: white; /* цвет иконки */
+  -webkit-mask-image: url('/public/icons/arrow-up.svg');
+  mask-image: url('/public/icons/arrow-up.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  scale: 1.5;
 }
