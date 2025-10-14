@@ -1,3 +1,13 @@
+*::-webkit-scrollbar {
+  width: 4px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #4824ff ;
+}
+*::-webkit-scrollbar-track {
+  background-color: #ffffff01 ;
+}
+
 html[data-theme='light'] {
   --main-background: white;
   --header-background: #ffffffe1;
@@ -79,7 +89,7 @@ header {
 .navigation {
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 13vh;
   align-items: center;
 }
 
@@ -106,6 +116,11 @@ header a:hover {
   display: flex;
   gap: 20px;
 }
+
+          .header-buttons-mobile {
+            display: flex;
+            gap: 5vw;
+          }
 
 .btn {
   position: relative;
@@ -144,13 +159,27 @@ header a:hover {
 
 /*доделать иконки, сейчас при наведении появляется зеленый цвет, так же пофиксить размеры*/
 .icon {
-  height: 48px;
+  height: 55px;
+  width: 55px; /* добавлено для управления шириной */
   border-radius: 50%;
-  background-color: white;
   transition: 0.3s;
   margin-right: 2%;
   cursor: pointer;
+  background-color: white;
+  background: white;
   filter: invert();
+  background-size: contain; /* иконка поместится и не растянется */
+  background-repeat: no-repeat;
+  background-position: center;
+  content: none; /* контент отключён для корректного отображения */
+}
+
+.icon.telegram {
+  background-image: url(/public/icons/telegram.svg);
+}
+
+.icon.instagram {
+  background-image: url(/public/icons/instagram.svg);
 }
 
 .icon.telegram.light,
@@ -158,16 +187,11 @@ header a:hover {
   background-color: white;
 }
 
-.icon.telegram {
-  content: url(/public/icons/telegram.svg);
-  margin-left: 2%;
-  padding: 7px;
-}
-
-.icon.instagram {
-  content: url(/public/icons/instagram.svg);
-  padding: 7px;
-}
+          .icon-mobile {
+            margin-right: 0;
+            height: 13.5vw;
+            width: 13.5vw;
+          }
 
 .icon:hover {
   background-color: white;
@@ -175,9 +199,9 @@ header a:hover {
 }
 
 .switch {
-  width: 100px;
+  width: 102px;
   height: 55px;
-  border-radius: 55px;
+  border-radius: 13.5vw;
   background-color: var(--switch-background);
   border: 1px solid var(--main-elements-color);
   cursor: pointer;
@@ -185,17 +209,29 @@ header a:hover {
   overflow: hidden;
 }
 
+          .switch-mobile {
+            width: 22vw;
+            height: 13.4vw;
+
+          }
+
 .theme {
   margin: 2px;
   width: 51px;
   height: 51px;
-  border-radius: 55px;
+  border-radius: 13.5vw;
   background: var(--bg-white-to-main);
   transition: transform 0.5s ease-in-out;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0;  
 }
+
+        .theme-mobile {
+          margin: 0.5vw;
+          width: 12.5vw;
+          height: 12.5vw;
+        }
 
 .theme.light {
   content: url(/public/icons/sun.svg);
@@ -205,11 +241,6 @@ header a:hover {
   content: url(/public/icons/moon.svg);
 }
 
-.switch:hover > .theme.light {
-  transform: rotate(45deg);
-}
-
-
 /* ----- WELCOME BLOCK ----- */
 .welcome-block {
   height: 800px;
@@ -217,22 +248,43 @@ header a:hover {
   place-items: center;
 }
 
+        .welcome-block.mobile {
+          padding: 80vw;
+          margin-top: 20vw;
+          height: 80vh;
+          flex-direction: column;
+        }
+
 .welcome-block h1 {
   font-size: 52px;
 }
+
+          .welcome-block.mobile h1 {
+            font-size: 24px;
+          }
+
 
 .welcome-block h2 {
   font-size: 42px;
   font-weight: 450;
 }
 
+          .welcome-block.mobile h2 {
+            font-size: 16px;
+          }
+
+
 .welcome-block h3 {
   font-size: 30px;
   font-weight: 300;
 }
 
+        .welcome-block.mobile h3 {
+          font-size: 15px;
+        }
+
 .title {
-  background: linear-gradient(to right, #4824ff, #4824ff, #85ebff, var(--main-elements-color), #85adff, #4824ff, #4824ff);
+  background: linear-gradient(to right, #4824ff, #4824ff, #85ebff, #eeebff, #85adff, #4824ff, #4824ff);
   background-clip: text;
   color: transparent;
   background-size: 200%;
@@ -249,11 +301,22 @@ header a:hover {
   width: 55%;
 }
 
+        .welcome-block .first_block.mobile {
+          text-align: center;
+          width: 100%;
+        }
+
 .main-image-block {
   margin-top: 5%;
   width: 35%;
   margin-left: 10%;
 }
+
+      .main-image-block.mobile {
+        margin: 0 5vw 0 5vw;
+        padding-top: 30vw;
+        width: 85vw;
+      }
 
 
 /* ----- SKILLS BLOCK ----- */
@@ -264,6 +327,10 @@ header a:hover {
   padding: 0 5vw;
 }
 
+.skills-block .mobile{
+  height: 200vw;
+}
+
 .skills-block .tag {
   display: flex;
   font-size: 24px;
@@ -271,8 +338,15 @@ header a:hover {
   background: var(--main-elements-color);
   color: var(--tag-text-color);
   margin: 0 12px 0 0;
+  margin-bottom: 20px;
   padding: 8px 22px 8px 8px;
   border-radius: 24px;
+}
+
+.skills-block .tag.mobile {
+  height: 10vw;
+  font-size: 6vw;
+  margin-bottom: -2vw;
 }
 
 .skills-block .tag .tag-icon {
