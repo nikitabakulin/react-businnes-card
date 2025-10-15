@@ -1,0 +1,1 @@
+export const Footer = () => <div className='footer'>@nikitabakulin</div>;   
