@@ -84,10 +84,10 @@ function Main() {
               <div className='header-buttons'>
                 <button onClick={ handleOpenModal } className="btn">Связаться</button>
 
-                <a href="https://t.me/sid10Juve" target="_blank" className={ theme == 'light' 
+                <a href="https://t.me/nikitabakulin7" target="_blank" className={ theme == 'light' 
                   ? "icon telegram light" 
                   : "icon telegram" }/>
-                <a href="https://vk.com/nikita_bakulin" target="_blank" className={ theme == 'light' 
+                <a href="https://vk.com/nikitabakulin" target="_blank" className={ theme == 'light' 
                   ? "icon instagram light" 
                   : "icon instagram" }/>
 
