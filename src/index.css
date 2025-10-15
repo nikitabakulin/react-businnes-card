@@ -248,20 +248,10 @@ header a:hover {
   place-items: center;
 }
 
-        .welcome-block.mobile {
-          padding: 80vw;
-          margin-top: 20vw;
-          height: 80vh;
-          flex-direction: column;
-        }
 
 .welcome-block h1 {
   font-size: 52px;
 }
-
-          .welcome-block.mobile h1 {
-            font-size: 24px;
-          }
 
 
 .welcome-block h2 {
@@ -269,19 +259,11 @@ header a:hover {
   font-weight: 450;
 }
 
-          .welcome-block.mobile h2 {
-            font-size: 16px;
-          }
-
 
 .welcome-block h3 {
   font-size: 30px;
   font-weight: 300;
 }
-
-        .welcome-block.mobile h3 {
-          font-size: 15px;
-        }
 
 .title {
   background: linear-gradient(to right, #4824ff, #4824ff, #85ebff, #eeebff, #85adff, #4824ff, #4824ff);
@@ -327,10 +309,6 @@ header a:hover {
   padding: 0 5vw;
 }
 
-.skills-block .mobile{
-  height: 200vw;
-}
-
 .skills-block .tag {
   display: flex;
   font-size: 24px;
@@ -345,7 +323,7 @@ header a:hover {
 
 .skills-block .tag.mobile {
   height: 10vw;
-  font-size: 6vw;
+  font-size: 5vw; 
   margin-bottom: -2vw;
 }
 
@@ -378,33 +356,28 @@ header a:hover {
   margin-top: 5%;
   margin-left: -5vw;
   margin-right: -5vw;
+  margin-bottom: 5vw;
   padding: 0 5vw;
 }
 
-.about-myself-block .tag {
+.about-myself-block .text-container {
   display: flex;
-  font-size: 24px;
-  font-weight: 500;
-  width: 75%;
-  margin: 0 6px 5px 0;
-  padding: 8px 22px 8px 8px;
+  align-items: start;
+  margin-bottom: -1.5vw; 
 }
 
-.about-myself-block .tag .tag-icon {
-  margin: -10px;
-  margin-right: 10px;
-  padding: 0;
-  position: relative;
-  height: 50px;
-  width: 50px;
-  background-color: #4824ff; /* цвет иконки */
-  -webkit-mask-image: url('/public/icons/check.svg');
-  mask-image: url('/public/icons/check.svg');
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  scale: 1;
+.about-myself-block .text-container.mobile {
+  margin-bottom: -5.5vw; 
+}
+
+.about-myself-block .tag {
+  font-weight: 500;
+  width: 80%;
+}
+
+.about-myself-block .tag.mobile {
+  font-weight: 500;
+  width: 80%;
 }
 
 /* ----- FOOTER BLOCK ----- */

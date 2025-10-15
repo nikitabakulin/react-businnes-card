@@ -164,7 +164,7 @@ function Main() {
             <div className='main-image-block'>
               <img src='./logo512.png' draggable="false"/>
             </div>
-          </div>
+          </div> 
         )
         : (
           <div className='welcome-block-mobile'>
@@ -173,30 +173,30 @@ function Main() {
             </div>
 
             <div className='first-block mobile'>
-              <h1> Программист-разработчик <br/> <span className='title'> nikitabakulin</span> </h1>
+              <h1 style={{fontSize: "10vw"}}> Программист-разработчик <br/> <span className='title'> nikitabakulin</span> </h1>
                   
-              <h2 style={{ marginTop: "5%" }}>  
+              <h2 style={{ marginTop: "5%" , fontSize: "6vw"}}>  
                 <span style={{ color: "#4824ff" }}> Backend </span>
                   и 
                 <span style={{ color: "#4824ff" }}> Full-stack </span>
                   разработка
               </h2>
 
-              <h2> 
+              <h2 style={{fontSize: "6vw"}}> 
                 Люблю работать с
                 <span style={{ color: "#4824ff" }}> кодом </span>
                     и
                 <span style={{ color: "#4824ff" }}> учиться </span> новому
               </h2>
 
-              <h2> 
+              <h2 style={{fontSize: "6vw"}}> 
                 Стремлюсь к 
                 <span style={{ color: "#4824ff" }}> реальным проектам </span>
                 и 
                 <span style={{ color: "#4824ff" }}> росту </span>
               </h2>
                   
-              <h3> Занимаюсь разработкой <br/> на протяжении
+              <h3 style={{fontSize: "4.5vw"}}> Занимаюсь разработкой <br/> на протяжении
                 <span style={{ color:"#4824ff" }}> 1 года </span>
               </h3>
             </div>
@@ -205,7 +205,7 @@ function Main() {
       }
       
 
-      <div className={ isPortrait ? 'skills-block' : 'skills-block mobile'} draggable="false">
+      <div className={'skills-block'} draggable="false">
         <h1 style={{ fontSize: isPortrait ? "52px" : "10vw"}}>Навыки</h1>
         <p style={{ fontSize: isPortrait ? "27px" : "6vw"}}> Пишу  
           <span style={{ color:"#4824ff" }}> чистый </span>
@@ -247,15 +247,36 @@ function Main() {
         </p>
       </div>
 
-      <div className={isPortrait ? 'about-myself-block' : 'about-myself-block mobile'}>
+      <div className={"about-myself-block"}>
         <h1 style={{ fontSize: isPortrait ? "52px" : "10vw" }}>О себе</h1>
-        <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> -  Никита Бакулин - Backend и Full-Stack разработчик из города Кирова </p>
-        <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> -  Образование: Колледж, Информационные системы и программирование, специалист </p>
-        <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> -  Коммуникабельный, ответственный, умею работать в команде </p>
-        <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> - Изучаю английский для профессионального роста и работы с международной документацией </p>
-        <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> - Быстро осваиваю новые технологии и стеки </p>
-        <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> - Есть водительское удостоверение и автомобиль </p>
-        <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> - Не  пью, не курю </p>
+        <div className={ isPortrait ? 'text-container' : 'text-container mobile'} style={{ marginTop: isPortrait ? "-1.5vw" : "-6vw" }}>
+          <p style={{ fontSize: isPortrait ? "27px" : "6vw", marginRight: isPortrait ? "1vw" : "2vw" }}> - </p>
+          <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> Никита Бакулин - Backend и Full-Stack разработчик из города Кирова </p>
+        </div>
+        <div className={ isPortrait ? 'text-container' : 'text-container mobile'}>
+          <p className={ isPortrait ? "" : ""} style={{ fontSize: isPortrait ? "27px" : "6vw", marginRight: isPortrait ? "1vw" : "2vw" }}> - </p>
+          <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> Образование: Колледж, Информационные системы и программирование, специалист </p>
+        </div>
+        <div className={ isPortrait ? 'text-container' : 'text-container mobile'}>
+          <p style={{ fontSize: isPortrait ? "27px" : "6vw", marginRight: isPortrait ? "1vw" : "2vw" }}> - </p>
+          <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> Коммуникабельный, ответственный, умею работать в команде </p>
+        </div>
+        <div className={ isPortrait ? 'text-container' : 'text-container mobile'}>
+          <p style={{ fontSize: isPortrait ? "27px" : "6vw", marginRight: isPortrait ? "1vw" : "2vw" }}> - </p>
+          <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> Быстро осваиваю новые технологии и стеки </p>
+        </div>
+        <div className={ isPortrait ? 'text-container' : 'text-container mobile'}>
+          <p style={{ fontSize: isPortrait ? "27px" : "6vw", marginRight: isPortrait ? "1vw" : "2vw" }}> - </p>
+          <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> Изучаю английский для профессионального роста и работы с международной документацией </p>
+        </div>
+        <div className={ isPortrait ? 'text-container' : 'text-container mobile'}>
+          <p style={{ fontSize: isPortrait ? "27px" : "6vw", marginRight: isPortrait ? "1vw" : "2vw" }}> - </p>
+          <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> Есть водительское удостоверение и автомобиль </p>
+        </div>
+        <div className={ isPortrait ? 'text-container' : 'text-container mobile'} >
+          <p style={{ fontSize: isPortrait ? "27px" : "6vw", marginRight: isPortrait ? "1vw" : "2vw" }}> - </p>
+          <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> Не  пью, не курю </p>
+        </div>
       </div>
 
       <div className='footer'>@nikitabakulin</div>
