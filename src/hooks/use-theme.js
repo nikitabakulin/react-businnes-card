@@ -1,6 +1,6 @@
 import { useLayoutEffect, useState } from "react";
 
-const Theme = () => {
+export const useTheme = () => {
     const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
     useLayoutEffect(() => {
@@ -9,6 +9,4 @@ const Theme = () => {
     },  [theme]);
 
     return { theme, setTheme }
-}
-
-export default Theme;
+};

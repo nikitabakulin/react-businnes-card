@@ -1,6 +1,6 @@
 
-import './ModalWindow.css';
-import { useModalVisibility } from "./hooks";
+import './modal-window.css';
+import { useModalVisibility } from "../../hooks";
 
 const ModalWindow = ({ show, onClose, children }) => {
     const isVisible = useModalVisibility(show, onClose);

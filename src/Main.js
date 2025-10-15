@@ -1,4 +1,4 @@
-import ModalWindow from './ModalWindow';
+import ModalWindow from './components/modal-window/modal-window';
 import { useIsPortrait, useModal, useThemeToggle, useScroll } from './hooks';
 import { AboutMySelfBlock, Footer, GitHubBlock, Header, SkillsBlock, WelcomeBlock } from './components';
 import { useCallback } from 'react';
