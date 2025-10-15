@@ -157,21 +157,18 @@ header a:hover {
   transform: rotate(-25deg) translateX(200px);
 }
 
-/*доделать иконки, сейчас при наведении появляется зеленый цвет, так же пофиксить размеры*/
 .icon {
   height: 55px;
-  width: 55px; /* добавлено для управления шириной */
+  width: 55px;
   border-radius: 50%;
   transition: 0.3s;
   margin-right: 2%;
   cursor: pointer;
   background-color: white;
   background: white;
-  filter: invert();
-  background-size: contain; /* иконка поместится и не растянется */
-  background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
-  content: none; /* контент отключён для корректного отображения */
+  content: none;
 }
 
 .icon.telegram {
@@ -181,7 +178,7 @@ header a:hover {
 .icon.instagram {
   background-image: url(/public/icons/vk.svg);
   border-radius: 50%;
-  background-color: white ;
+  background-color: white;
 }
 
 .icon.telegram.light,
@@ -197,11 +194,11 @@ header a:hover {
 
 .icon:hover {
   background-color: white;
-  filter: drop-shadow(0px 0px 5px #4824ff40);
+  filter: invert();
 }
 
 .switch {
-  width: 102px;
+  width: 100px;
   height: 55px;
   border-radius: 13.5vw;
   background-color: var(--switch-background);

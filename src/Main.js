@@ -93,7 +93,7 @@ function Main() {
 
                 <div className="switch" onClick={ toggleTheme }> 
                   <div className={theme === 'light' ? "theme light" : "theme dark"}
-                    style={{ transform: isDarkTheme ? 'translateX(38px) rotate(45deg)' : 'translate(0) rotate(45deg)'}}
+                    style={{ transform: isDarkTheme ? 'translateX(40px) rotate(45deg)' : 'translate(0) rotate(45deg)'}}
                   ></div>
                 </div>
               </div>
@@ -102,7 +102,7 @@ function Main() {
               <div className='navigation'>
                 <div className="switch switch-mobile" onClick={ toggleTheme }> 
                     <div className={theme === 'light' ? "theme theme-mobile light" : "theme theme-mobile dark"}
-                      style={{ transform: isDarkTheme ? 'translateX(38px) rotate(45deg)' : 'translate(0) rotate(45deg)'}}
+                      style={{ transform: isDarkTheme ? 'translateX(8.5vw) rotate(45deg)' : 'translate(0) rotate(45deg)'}}
                     ></div>
                 </div>
                 
