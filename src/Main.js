@@ -107,13 +107,13 @@ function Main() {
                 </div>
                 
                 <div className='header-buttons-mobile'>
-                  <a href="https://t.me/sid10Juve" target="_blank" 
+                  <a href="https://t.me/nikitabakulin7" target="_blank" 
                     className={ theme == 'light' 
                     ? "icon icon-mobile telegram light" 
                     : "icon icon-mobile telegram" }
                   />
                   <a 
-                    href="https://vk.com/nikita_bakulin" target="_blank" 
+                    href="https://vk.com/nikitabakulin" target="_blank" 
                     className={ theme == 'light' 
                       ? "icon icon-mobile instagram light" 
                       : "icon icon-mobile instagram" }
@@ -230,8 +230,8 @@ function Main() {
         </div>
         <p style={{fontSize: isPortrait ? "27px" : "6vw"}}> Готов работать в команде, быстро адапируюсь к процессам и куммуникации. <br/>
           Детальную информацию готов обсудить при
-          <span style={{ color:"#4824ff", cursor: "pointer" }} onClick={isPortrait ? handleOpenModal : ()=>{}}> личной переписке</span>.        
-        </p>
+          <span style={{ color:"#4824ff", cursor: "pointer" }} onClick={isPortrait ? handleOpenModal : ()=>{window.open('https://t.me/nikitabakulin7')}}> личной переписке</span>.        
+        </p>  
       </div>
 
       <div className={'github-block'}>
