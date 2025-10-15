@@ -84,16 +84,16 @@
 
 .social.telegram {
     content: url(/public/icons/telegram.svg);
-    scale: 1.3;
+    scale: 0.8;
     filter: invert();
     margin: 5%;
     margin-right: 10%;
     margin-left: 10%;
 }
 
-.social.instagram {
-    content: url(/public/icons/instagram.svg);
-    scale: 1.3;
+.social.vk {
+    content: url(/public/icons/vk.svg);
+    scale: 0.8;
     filter: invert();
     margin: 5%;
     margin-right: 10%;

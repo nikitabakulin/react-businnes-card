@@ -179,7 +179,9 @@ header a:hover {
 }
 
 .icon.instagram {
-  background-image: url(/public/icons/instagram.svg);
+  background-image: url(/public/icons/vk.svg);
+  border-radius: 50%;
+  background-color: white ;
 }
 
 .icon.telegram.light,
