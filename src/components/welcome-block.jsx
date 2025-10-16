@@ -3,7 +3,7 @@ import React from 'react';
 export const WelcomeBlock = ({ isPortrait }) => {
   return (
     isPortrait ? (
-      <div className='welcome-block' style={{ paddingTop: '10vw' }}>
+      <div className='welcome-block' >
         <div className='first-block'>
           <h1>Программист-разработчик <br /> <span className='title'>nikitabakulin</span></h1>
 

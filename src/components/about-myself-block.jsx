@@ -26,7 +26,7 @@ export const AboutMySelfBlock = ({ isPortrait }) => {
                 <p style={{ fontSize: isPortrait ? "27px" : "6vw", marginRight: isPortrait ? "1vw" : "2vw" }}> - </p>
                 <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> Есть водительское удостоверение и автомобиль </p>
             </div>
-            <div className={ isPortrait ? 'text-container' : 'text-container mobile'} >
+            <div className={ isPortrait ? 'text-container' : 'text-container mobile'} style={{ marginBottom: isPortrait ? "" : "1vh" }}>
                 <p style={{ fontSize: isPortrait ? "27px" : "6vw", marginRight: isPortrait ? "1vw" : "2vw" }}> - </p>
                 <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> Не  пью, не курю </p>
             </div>

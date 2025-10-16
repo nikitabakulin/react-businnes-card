@@ -39,7 +39,7 @@ function Main() {
       
       <Footer/>
       
-      <button className={ scroll < 720 ? "" : "btn-up" } onClick={ upButton }></button>
+      <button className={ scroll < 720 ? "" : "btn-up" } style={{ marginBottom: isPortrait ? "" : "8vh" }} onClick={ upButton }></button>
     </div>
   );
 } 

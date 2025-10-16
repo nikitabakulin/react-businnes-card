@@ -11,7 +11,7 @@ export const Header = ({
       { isPortrait ? (
         <div className='navigation'>
           <div className="menu">
-            <a onClick={upButton}>Г лавная</a>
+            <a onClick={upButton}>Главная</a>
             <a onClick={(e) => toBlock(e.target.getAttribute('height'))} height="700">Навыки</a>
             <a onClick={(e) => toBlock(e.target.getAttribute('height'))} height="1230">GitHub проекты</a>
             <a onClick={(e) => toBlock(e.target.getAttribute('height'))} height="1920">О себе</a>

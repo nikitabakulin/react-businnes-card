@@ -242,7 +242,7 @@ header a:hover {
 
 /* ----- WELCOME BLOCK ----- */
 .welcome-block {
-  height: 800px;
+  height: 100vh;
   display: flex;
   place-items: center;
 }
