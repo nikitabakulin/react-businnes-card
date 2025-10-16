@@ -26,7 +26,7 @@ export const SkillsBlock = ({
           <p className={ isPortrait ? 'tag' : 'tag mobile'}> <p className={isPortrait ? 'tag-icon' : 'tag-icon mobile'}/> HTML, CSS </p> <br/>
           <p className={ isPortrait ? 'tag' : 'tag mobile'}> <p className={isPortrait ? 'tag-icon' : 'tag-icon mobile'}/> Паттерны MVC, MVVM </p> <br/>
         </div>
-        <p style={{fontSize: isPortrait ? "27px" : "6vw"}}> Готов работать в команде, быстро адапируюсь к процессам и куммуникации. <br/>
+        <p style={{fontSize: isPortrait ? "27px" : "6vw"}}> Готов работать в команде, быстро адаптируюсь к процессам и куммуникации. <br/>
           Детальную информацию готов обсудить при
           <span style={{ color:"#4824ff", cursor: "pointer" }} onClick={isPortrait ? handleOpenModal : ()=>{window.open('https://t.me/nikitabakulin7')}}> личной переписке</span>.        
         </p>  
