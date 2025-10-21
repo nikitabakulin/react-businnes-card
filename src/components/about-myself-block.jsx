@@ -11,6 +11,10 @@ export const AboutMySelfBlock = ({ isPortrait }) => {
                 <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> Образование: Колледж, Информационные системы и программирование, специалист </p>
             </div>
             <div className={ isPortrait ? 'text-container' : 'text-container mobile'}>
+                <p className={ isPortrait ? "" : ""} style={{ fontSize: isPortrait ? "27px" : "6vw", marginRight: isPortrait ? "1vw" : "2vw" }}> - </p>
+                <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> Дата рождения: 31 августа 2005 года </p>
+            </div>
+            <div className={ isPortrait ? 'text-container' : 'text-container mobile'}>
                 <p style={{ fontSize: isPortrait ? "27px" : "6vw", marginRight: isPortrait ? "1vw" : "2vw" }}> - </p>
                 <p style={{ fontSize: isPortrait ? "27px" : "6vw" }} className={isPortrait ? 'tag' : 'tag mobile'}> Коммуникабельный, ответственный, умею работать в команде </p>
             </div>
