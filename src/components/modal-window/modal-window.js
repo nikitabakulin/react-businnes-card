@@ -19,9 +19,9 @@ const ModalWindow = ({ show, onClose, children }) => {
                     <button onClick={onClose} className="modal-close-button" aria-label="Close Modal"></button>
                     {children}
                     <div style={{ display: "flex" }}>
-                        <a href="https://t.me/sid10Juve" target="_blank" className="social-button">
+                        <a href="https://t.me/nikitabakulin43" target="_blank" className="social-button">
                         <a className="social telegram"/> Телеграм </a>
-                        <a href="https://vk.com/nikita_bakulin" target="_blank" className="social-button">
+                        <a href="https://vk.com/nikitabakulin" target="_blank" className="social-button">
                         <a className="social vk"/> ВКонтакте </a>
                     </div>
                 </div>

@@ -20,7 +20,7 @@ export const Header = ({
           <div className='header-buttons'>
             <button onClick={handleOpenModal} className="btn">Связаться</button>
 
-            <a href="https://t.me/nikitabakulin7" target="_blank" rel="noopener noreferrer" className={theme === 'light' ? "icon telegram light" : "icon telegram"} />
+            <a href="https://t.me/nikitabakulin43" target="_blank" rel="noopener noreferrer" className={theme === 'light' ? "icon telegram light" : "icon telegram"} />
             <a href="https://vk.com/nikitabakulin" target="_blank" rel="noopener noreferrer" className={theme === 'light' ? "icon instagram light" : "icon instagram"} />
 
             <div className="switch" onClick={toggleTheme}>
@@ -39,7 +39,7 @@ export const Header = ({
           </div>
 
           <div className='header-buttons-mobile'>
-            <a href="https://t.me/nikitabakulin7" target="_blank" rel="noopener noreferrer"
+            <a href="https://t.me/nikitabakulin43" target="_blank" rel="noopener noreferrer"
               className={theme === 'light' ? "icon icon-mobile telegram light" : "icon icon-mobile telegram"}
             />
             <a href="https://vk.com/nikitabakulin" target="_blank" rel="noopener noreferrer"

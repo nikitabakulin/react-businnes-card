@@ -28,7 +28,7 @@ export const SkillsBlock = ({
         </div>
         <p style={{fontSize: isPortrait ? "27px" : "6vw"}}> Готов работать в команде, быстро адаптируюсь к процессам и куммуникации. <br/>
           Детальную информацию готов обсудить при
-          <span style={{ color:"#4824ff", cursor: "pointer" }} onClick={isPortrait ? handleOpenModal : ()=>{window.open('https://t.me/nikitabakulin7')}}> личной переписке</span>.        
+          <span style={{ color:"#4824ff", cursor: "pointer" }} onClick={isPortrait ? handleOpenModal : ()=>{window.open('https://t.me/nikitabakulin43')}}> личной переписке</span>.        
         </p>  
       </div>
     )
